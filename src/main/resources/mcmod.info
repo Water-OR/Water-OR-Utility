@@ -1,0 +1,16 @@
+[
+{
+  "modid": "wtorutility",
+  "name": "Water OR Utility",
+  "description": "Water OR's Utility mod",
+  "version": "1.12.2-0.1.0",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Water OR"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "pack.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
