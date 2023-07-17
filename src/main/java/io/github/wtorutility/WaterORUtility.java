@@ -1,5 +1,6 @@
 package io.github.wtorutility;
 
+import io.github.wtorutility.init.ModCapabilities;
 import io.github.wtorutility.init.ModObjects;
 import io.github.wtorutility.proxy.Common;
 import io.github.wtorutility.util.Log;
@@ -24,6 +25,7 @@ public class WaterORUtility {
   @Mod.EventHandler
   public static void preInit(FMLPreInitializationEvent event) {
     Log.warn(ModInfo.NAME + "is at the pre init");
+    ModCapabilities.registerModCapabilities();
   }
   
   @Mod.EventHandler
@@ -33,6 +35,7 @@ public class WaterORUtility {
   
   @Mod.EventHandler
   public static void postInit(FMLPostInitializationEvent event) {
+    ModObjects.EnchantmentSubscribe();
     Log.warn(ModInfo.NAME + "is at the post init");
   }
   

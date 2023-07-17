@@ -5,17 +5,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Log {
-  private static final Logger LOGGER = LogManager.getLogger(ModInfo.MODID);
+  private static final Logger LOG = LogManager.getLogger(ModInfo.MODID);
   
   public static Logger getLOGGER() {
-    return LOGGER;
+    return LOG;
   }
   
-  public static void info(String msg) { LOGGER.info(msg); }
+  public static void info(String msg) { LOG.info(msg); }
   
-  public static void warn(String msg) { LOGGER.warn(msg); }
+  public static void warn(String msg) { LOG.warn(msg); }
   
-  public static void error(String msg) { LOGGER.error(msg); }
+  public static void error(String msg) { LOG.error(msg); }
   
-  public static void debug(String msg) { LOGGER.debug(msg); }
+  public static void debug(String msg) { LOG.debug(msg); }
 }

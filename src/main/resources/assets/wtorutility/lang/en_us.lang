@@ -1,3 +1,5 @@
 itemGroup.wtorutility=Water OR Utility | Items
 
 item.test.name=Test Item
+
+enchantment.shortbow=Short Bow
