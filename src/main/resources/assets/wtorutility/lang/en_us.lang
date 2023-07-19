@@ -3,3 +3,5 @@ itemGroup.wtorutility=Water OR Utility | Items
 item.test.name=Test Item
 
 enchantment.shortbow=Short Bow
+
+config.wtorutility.general.noArrowDamageCoolDownType=No Arrow Damage Cool Down Type

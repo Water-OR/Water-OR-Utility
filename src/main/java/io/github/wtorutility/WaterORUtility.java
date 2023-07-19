@@ -1,6 +1,6 @@
 package io.github.wtorutility;
 
-import io.github.wtorutility.init.ModCapabilities;
+import io.github.wtorutility.init.ModConfigsGUI;
 import io.github.wtorutility.init.ModObjects;
 import io.github.wtorutility.proxy.Common;
 import io.github.wtorutility.util.Log;
@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import javax.annotation.Nonnull;
 
-@Mod(modid = ModInfo.MODID, name = ModInfo.NAME, version = ModInfo.VERSION)
+@Mod(modid = ModInfo.MODID, name = ModInfo.NAME, version = ModInfo.VERSION, guiFactory = ModConfigsGUI.ModConfigsGUIClass)
 public class WaterORUtility {
   @Mod.Instance
   public static WaterORUtility instance = new WaterORUtility();
@@ -25,7 +25,6 @@ public class WaterORUtility {
   @Mod.EventHandler
   public static void preInit(FMLPreInitializationEvent event) {
     Log.warn(ModInfo.NAME + "is at the pre init");
-    ModCapabilities.registerModCapabilities();
   }
   
   @Mod.EventHandler

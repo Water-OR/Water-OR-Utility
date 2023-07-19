@@ -1,6 +1,6 @@
 package io.github.wtorutility.init;
 
-import io.github.wtorutility.enchantments.EnchantmentShortbow;
+import io.github.wtorutility.enchantments.EnchantmentShortBow;
 import io.github.wtorutility.items.ItemTest;
 import io.github.wtorutility.util.Log;
 import net.minecraft.enchantment.Enchantment;
@@ -33,9 +33,9 @@ public class ModObjects {
   public static void EnchantmentSubscribe() {
     for (Enchantment enchantment : MOD_ENCHANTMENT) {
       MinecraftForge.EVENT_BUS.register(enchantment);
-      Log.info("Register enchantment event of " + Objects.requireNonNull(enchantment.getRegistryName()).toString());
+      Log.info("Register enchantment event of " + Objects.requireNonNull(enchantment.getRegistryName()));
     }
   }
   
-  public static final EnchantmentShortbow ENCHANTMENT_SHORTBOW = new EnchantmentShortbow();
+  public static final EnchantmentShortBow ENCHANTMENT_SHORT_BOW = new EnchantmentShortBow();
 }

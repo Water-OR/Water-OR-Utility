@@ -1,3 +1,7 @@
 itemGroup.wtorutility=水或的使用设备 | 物品
 
 item.test.name=测试物品
+
+enchantment.shortbow=短弓
+
+config.wtorutility.general.noArrowDamageCoolDownType=没有箭伤害间隔
